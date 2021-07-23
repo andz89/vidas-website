@@ -1,0 +1,184 @@
+
+
+.container{
+    background-color: $dark-blue;
+    height: 60px;
+    color: white;
+    width:100%;
+}
+
+nav{
+    max-width: $max-width;
+    margin: auto;
+    font-weight: 300;
+    font-size: .8rem;
+    display:flex;
+    cursor:pointer;
+    width:100%;
+
+    img{
+    width: 40px;
+    height:40px;
+    margin: .7rem 1rem;
+    }
+    ul li:first-child{
+        color: $yellow;
+        }
+    ul{
+        list-style-type: none;
+        display: flex;
+
+       
+
+        li{
+        margin: 1.5rem 1rem;
+
+        }
+
+        li:hover{
+            color: $yellow;
+        }
+
+    }
+    
+}
+
+main{
+
+    .landing{
+        position: relative;
+        height: 60vh;
+
+       
+    }
+   .landing-inner{
+        img{
+            width: 11%;
+            margin-bottom: 20px;
+
+        }
+        color: #333;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .header{
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1.375rem;
+            color: $dark-blue;
+        }
+        .lead{
+            color: #333;
+            margin-top: 10px;
+            font-size:1.4375;
+            letter-spacing: .2rem;
+            font-weight: 300;
+        }
+        
+    }
+
+}
+
+footer{
+    color: #333;
+    background-color:$gray;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    display:flex;
+    height: 70px;
+    justify-content:center;
+    
+    p{
+        margin:20px 30px;
+        align-items:center;
+        font-size: 1rem;
+        img{
+            width: 30px;
+            margin-bottom: -10px;
+            margin-right: 5px;
+        }
+    }
+    p a{
+        color: #333;
+        text-decoration: none;
+    }
+    p a:hover{
+        color: rgb(0, 89, 255);
+    }
+    .header{
+        margin-top:27px;
+    }
+   
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+
+        .landing{
+
+       
+        }
+       .landing-inner{
+        width: 90%;
+            img{
+                width: 20%;
+                margin-bottom: 20px;
+    
+            }
+          
+            .header{
+                font-size: 1.7rem;
+                letter-spacing: .5rem;
+           
+            }
+            .lead{
+            
+                font-size:1rem;
+            
+            }
+            
+        }
+    
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 420px){
+    .container{
+
+        .landing{
+            height: 40vh;
+       
+        }
+       .landing-inner{
+            img{
+                width: 20%;
+                margin-bottom: 20px;
+    
+            }
+            width: 90%;
+            .header{
+                font-size: 1.3rem;
+                letter-spacing: .2rem;
+           
+            }
+            .lead{
+            
+                font-size:.8rem;
+            
+            }
+            
+        }
+    
+    }
+
+    
+}
