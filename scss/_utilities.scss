@@ -1,5 +1,4 @@
 
-
 .container{
     background-color: $dark-blue;
     height: 60px;
@@ -7,6 +6,11 @@
     width:100%;
 }
 
+@keyframes modalOpen{
+
+    from{opacity: 0}
+    to{opacity: 1;}
+}
 nav{
     max-width: $max-width;
     margin: auto;
@@ -44,8 +48,8 @@ nav{
 }
 
 main{
-    display:none;
-
+    animation-name: modalOpen;
+    animation-duration: 0.9000s; 
     .landing{
         position: relative;
         height: 60vh;
@@ -85,7 +89,9 @@ main{
 
 }
 .contact{
-  
+    animation-name: modalOpen;
+    animation-duration: 0.9000s; 
+    display: none;
     max-width: 600px;
     margin:80px auto 0 auto;
     color: #333;
