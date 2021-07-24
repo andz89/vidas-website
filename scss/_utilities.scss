@@ -100,7 +100,16 @@ main{
     font-size: .9rem;
     height: 210px;
     max-height: 400px;
-    
+    //to move the span in the contact details
+    span{
+        margin-left: 5px;
+    }
+    //for facebook icon contact only
+    .facebook-icon{
+        margin-right: 9px;
+    }
+
+
     .close{
         float: right;
     }
@@ -184,6 +193,46 @@ footer{
         }
     
     }
+    .contact{
+    
+        max-width: 400px;
+        height: 340px;
+        
+        img{
+            width:25px;
+        }
+          //for facebook icon contact only
+          .facebook-icon{
+            width: 14px;
+        }
+      
+        .call_email{
+         
+            display: block;
+         
+    
+            div{
+                margin-bottom: 10px;
+             
+            }
+           
+        }
+     
+        .facebook_address{
+            margin-top:-12px;
+            display: block;
+           
+            div{
+                margin-bottom: 10px;
+               
+            }
+        }
+       
+        h4{
+            margin: 20px auto;
+        }
+        
+    }
 
     
     
@@ -217,6 +266,47 @@ footer{
         }
     
     }
+
+    .contact{
+        
+        max-width: 280px;
+        height: 300px;
+        font-size: .8rem;
+      
+        img{
+            width:25px;
+        }
+         //for facebook icon contact only
+        .facebook-icon{
+            width: 14px;
+        }
+        .call_email{
+         
+            display: block;
+         
+    
+            div{
+                margin-bottom: 10px;
+             
+            }
+           
+        }
+        .facebook_address{
+            margin-top:-12px;
+            display: block;
+           
+            div{
+                margin-bottom: 10px;
+               
+            }
+        }
+       
+        h4{
+            margin: 20px auto;
+        }
+        
+    }
+
 
     
 }
