@@ -89,26 +89,22 @@ main{
     }
 
 }
+
 .contact{
     animation-name: modalOpen;
     animation-duration: 0.9000s; 
     display: none;
-    max-width: 600px;
     margin:80px auto 0 auto;
     color: #333;
     background-color:$gray;
     padding:20px 30px;
     font-size: .9rem;
-    height: 210px;
-    max-height: 400px;
-    //to move the span in the contact details
-    span{
-        margin-left: 5px;
-    }
-    //for facebook icon contact only
-    .facebook-icon{
-        margin-right: 9px;
-    }
+    width:100%;
+    max-width: 600px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  
+  
+   
 
 
     .close{
@@ -118,29 +114,76 @@ main{
         color: rgb(75, 74, 74);
     }
     .call_email{
-        margin-bottom: 30px;
-        display: flex;
-        gap: 40px;
-        justify-content: flex-start;
+        
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin: 0 auto 30px auto;
+        width:100%;
+       
+       
 
         div{
-
+    
+    
             display: flex;
-            gap: 10px;
-            justify-content: flex-start;
+            justify-content:flex-start;
+         
+           
+           .img-div{
+          
+               width: 30px;
+             
+
+               img{
+                width: 100%;
+                }
+
+               
+           }
+          
+           span{
+               margin-left: 10px;
+           }
+          
         }
        
     }
     .facebook_address{
-        display: flex;
-        gap: 40px;
-        justify-content: flex-start;
+         
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin: auto;
+        width:100%;
+        
+    
 
         div{
-
             display: flex;
-            gap: 10px;
-            justify-content: flex-start;
+            justify-content:flex-start;
+
+            .img-div .facebook-icon{
+            width: 16px;
+             margin-right: 10px;
+
+            img{
+             width: 100%;
+             }
+         }
+         .img-div .location-icon{
+
+             width: 20px;
+             margin-right: 5px;
+
+            img{
+             width: 100%;
+             }
+         }
+           span{
+               margin-left: 12px;
+           }
+          
         }
     }
    
@@ -168,10 +211,6 @@ footer{
 @media only screen and (max-width: 768px){
     .container{
 
-        .landing{
-
-       
-        }
        .landing-inner{
         width: 90%;
             img{
@@ -182,7 +221,7 @@ footer{
             }
           
             .header{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
                 letter-spacing: .8rem;
              
          
@@ -197,56 +236,18 @@ footer{
         }
     
     }
-    .contact{
-    
-        max-width: 400px;
-        height: 340px;
-        
-        img{
-            width:25px;
-        }
-          //for facebook icon contact only
-          .facebook-icon{
-            width: 14px;
-        }
-      
-        .call_email{
-         
-            display: block;
-         
-    
-            div{
-                margin-bottom: 10px;
-             
-            }
-           
-        }
-     
-        .facebook_address{
-            margin-top:-12px;
-            display: block;
-           
-            div{
-                margin-bottom: 10px;
-               
-            }
-        }
-       
-        h4{
-            margin: 20px auto;
-        }
-        
-    }
+
 
     
     
 }
 
+
 @media only screen and (max-width: 420px){
     .container{
 
         .landing{
-            height: 40vh;
+            height: 60vh;
        
         }
        .landing-inner{
@@ -257,7 +258,7 @@ footer{
             }
             width: 90%;
             .header{
-                font-size: 1.3rem;
+                font-size: 1rem;
                 letter-spacing: .2rem;
            
             }
@@ -271,45 +272,7 @@ footer{
     
     }
 
-    .contact{
-        
-        max-width: 280px;
-        height: 300px;
-        font-size: .8rem;
-      
-        img{
-            width:25px;
-        }
-         //for facebook icon contact only
-        .facebook-icon{
-            width: 14px;
-        }
-        .call_email{
-         
-            display: block;
-         
-    
-            div{
-                margin-bottom: 10px;
-             
-            }
-           
-        }
-        .facebook_address{
-            margin-top:-12px;
-            display: block;
-           
-            div{
-                margin-bottom: 10px;
-               
-            }
-        }
-       
-        h4{
-            margin: 20px auto;
-        }
-        
-    }
+
 
 
     

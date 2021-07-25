@@ -18,6 +18,6 @@ nav_home.addEventListener('click', function(){
     nav_contact.style.color = "#fff"
     nav_home.style.color = "#d15f20"
 
-    main.style.display = "block"
+    main.style.display = "grid"
 
 })
