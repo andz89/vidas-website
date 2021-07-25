@@ -60,6 +60,7 @@ main{
         img{
             width: 11%;
             margin-bottom: 20px;
+            margin-left: -23px;
 
         }
         color: #333;
@@ -72,9 +73,9 @@ main{
         justify-content: center;
         text-align: center;
         .header{
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             font-weight: 300;
-            letter-spacing: 1.375rem;
+            letter-spacing: .5rem;
             color: $dark-blue;
         }
         .lead{
@@ -176,12 +177,15 @@ footer{
             img{
                 width: 20%;
                 margin-bottom: 20px;
+                
     
             }
           
             .header{
                 font-size: 1.7rem;
-                letter-spacing: .5rem;
+                letter-spacing: .8rem;
+             
+         
            
             }
             .lead{
