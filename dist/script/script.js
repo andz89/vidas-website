@@ -1,9 +1,9 @@
-
-
+window.ws = new WebSlides()
 let contact = document.querySelector(".contact")
 let main = document.querySelector("main")
 let nav_home = document.querySelector(".nav_home")
 let nav_contact = document.querySelector(".nav_contact")
+
 
 nav_contact.addEventListener('click', function(){
     contact.style.display = "block";
