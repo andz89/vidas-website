@@ -1,0 +1,85 @@
+
+.contact{
+    animation-name: modalOpen;
+    animation-duration: 0.6000s; 
+    display: none;
+    margin:50px auto 0 auto;
+    color: #333;
+    background-color:$gray;
+    padding:10px 30px;
+    font-size: 1.4rem;
+    width:90%;
+    max-width: 530px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    img{
+        width:25px;
+     
+    }
+   
+
+     
+
+        .call{
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            margin-bottom: 20px;
+
+            div{
+                line-height:20px;
+            }
+        }
+
+        .email{
+            img{
+                width:30px;
+            }
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            margin-bottom: 20px;
+
+            div{
+                line-height:20px;
+            }
+        }
+    
+        
+        .facebook{
+            img{
+            width:17px;
+            }
+           
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            margin-bottom: 20px;
+
+            div{
+                line-height:20px;
+            }
+        }
+
+        .address{
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            margin-bottom: 20px;
+            div{
+                line-height:20px;
+            }
+
+        }
+      
+
+
+   
+    h4{
+        margin: -20px 0 10px 0;
+        font-size: 1.6rem;
+       
+    }
+
+    
+}

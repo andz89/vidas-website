@@ -2013,7 +2013,7 @@
    display: block;
    margin-left: auto;
    margin-right: auto; }
- 
+  /*===============================================
  @media (min-width: 600px) {
    .flexblock.gallery {
      margin-left: -2%;
@@ -2022,7 +2022,27 @@
        margin-left: 2%;
        margin-right: 2%;
        width: 46%; } }
- 
+ */
+/*custom start here*/
+
+ @media (min-width: 300px) {
+  .flexblock.gallery {
+    margin-left: -2%;
+    margin-right: -2%; }
+    .flexblock.gallery li {
+      margin-left: 2%;
+      margin-right: 2%;
+      width:46%; } }
+      @media (min-width: 720px) {
+        .flexblock.gallery li {
+          width: 41%; }
+        .grid.sm .flexblock.gallery li,
+        .grid.ms .flexblock.gallery li {
+          width: 29%; }
+        .grid.sms .flexblock.gallery li {
+          width: 46%; } }
+/*custom end here*/
+
  @media (min-width: 1024px) {
    .flexblock.gallery li {
      width: 21%; }

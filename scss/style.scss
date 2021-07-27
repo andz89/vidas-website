@@ -1,6 +1,9 @@
 @import 'config';
 @import 'utilities';
-
+@import 'nav';
+@import 'main';
+@import 'contact';
+@import 'slides';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,5 +12,7 @@
 }
 body{
 background-color: rgb(245, 245, 245);
+overflow:auto;
+
 }
 

@@ -1,0 +1,47 @@
+nav{
+    
+    max-width: $max-width;
+    margin:auto;
+    font-weight: 300;
+    font-size: 1.4rem;
+    display:flex;
+    cursor:pointer;
+    width:100%;
+
+    img{
+    width: 40px;
+    height:40px;
+    margin: .7rem 1rem;
+    }
+    ul li:first-child{
+        color: $yellow;
+        }
+    ul{
+        list-style-type: none;
+        display: flex;
+
+       
+
+        li{
+        margin: 1.5rem 1rem;
+
+        a{
+          
+            color: #fff;
+            text-decoration: none;
+        }
+        }
+
+        li:hover{
+            color: $yellow;
+        }
+        .nav_home{
+            color: #d15f20;
+        }
+
+        
+
+    }
+ 
+    
+}
