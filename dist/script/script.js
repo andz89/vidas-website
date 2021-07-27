@@ -1,6 +1,4 @@
-import {data} from "./data.js"
 
-console.log(data)
 
 let contact = document.querySelector(".contact")
 let main = document.querySelector("main")
