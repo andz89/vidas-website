@@ -7,8 +7,9 @@ for(let i = 0; i < data.length; i++){
     div.innerHTML =  `
     
   
-    <img id="${data[i].id}" src="${data[i].source}" class="hallo" alt="...">
-    <div  class="card-body">
+    <img src="${data[i].source}" class="identifier" alt="...">
+    <div id="${data[i].id}"  class="card-body">
+  
       <h5 class="card-title">${data[i].name}</h5>
       <p class="card-text">${data[i].description}</p>
       <p class="card-text">${data[i].size}</p>
@@ -26,8 +27,11 @@ for(let i = 0; i < data.length; i++){
 
 function getId(e){
     
-    if( e.classList == "hallo"){
-      console.log( e.getAttribute("id"))
+    if( e.classList == "identifier"){
+        let link = "preview.html"
+        window.location.href = link
+     console.log(e.nextElementSibling.getAttribute('id'))   
+    
       
     }
 }
