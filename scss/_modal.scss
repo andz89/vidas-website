@@ -1,0 +1,39 @@
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(235, 230, 230, 0.5);
+  }
+
+  .modal-content {
+    margin:2% auto 0 auto;
+    width: 1500px;
+    height:850px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+    display:flex;
+    justify-content: flex-start;
+    background-color:#fff;
+
+    div img{
+      width: 850px;
+    height:850px;
+    }
+    .details{
+       color: #333;
+       flex: 1;
+    }
+
+    span{
+      font-size:40px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
