@@ -1,23 +1,26 @@
-import {data} from "./data.js"
+import {data_birthday} from "./data_birthday.js"
+
+
+
 
 let section = document.querySelector(".section-a")
-for(let i = 0; i < data.length; i++){
-    let div = document.createElement('div')
-    div.className += "shadow-sm card" 
-    div.innerHTML =  `
+for(let i = 0; i < data_birthday.length; i++){
+    let li = document.createElement('li')
+    li.className += "shadow-sm" 
+    li.innerHTML =  `
     
- 
-    <img src="${data[i].source}" class="identifier" alt="...">
-    <div id="${data[i].id}"  class="card-body">
-  
-      <h5 class="card-title">${data[i].name}</h5>
-      <p class="card-text">${data[i].description}</p>
-      <p class="card-text">${data[i].size}</p>
-    </div>
-  
+    
+                    <img src="${data_birthday[i].source}" class="identifier" alt="...">
+                    <div id="${data_birthday[i].id}">
+                    <p class="title">${data_birthday[i].name}</p>
+                    <p class="lead">${data_birthday[i].description}</p>
+                    <p class="card-text">${data_birthday[i].size}</p>
+                    </div>
+             
+            
 
     `
-  section.appendChild(div)
+  section.appendChild(li)
 }
 
 
@@ -28,7 +31,7 @@ function getId(e){
         
          let id = e.nextElementSibling.getAttribute('id')
          modal.style.display = 'block';
-        let data_filtered = data.filter(function(r){
+        let data_filtered = data_birthday.filter(function(r){
         return r.id == id
         }).map(function(r){
         return r
@@ -52,7 +55,7 @@ function getId(e){
         `
       
         
-       
+        section.style.display = "none"
         modal.removeChild(modal.childNodes[0])
         modal.appendChild(div)
       
@@ -64,12 +67,14 @@ function getId(e){
         // Close
         function closeModal() {
         modal.style.display = 'none';
+        section.style.display = "grid"
         }
 
       // Close If Outside Click
       function outsideClick(e) {
       if (e.target == modal) {
       modal.style.display = 'none';
+      section.style.display = "grid"
       }
       }
       })

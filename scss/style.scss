@@ -1,20 +1,21 @@
 @import 'config';
 @import 'utilities';
 @import 'nav';
-@import 'main';
+@import 'birthday';
 @import 'contact';
 @import 'slides';
 @import 'preview';
 @import 'modal';
+@import 'banner';
+@import 'feature';
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+ 
 }
 body{
 background-color: rgb(245, 245, 245);
-overflow:auto;
-
 }
 
