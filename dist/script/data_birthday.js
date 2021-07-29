@@ -6,7 +6,7 @@ export const data_birthday = [
     name:"Cars",
     description: "beautiful",
     size: "5x7 inches",
-    source:  "img/shark.jpg"
+    source:  "img/1000px.jpg"
 
 },
 {
@@ -14,7 +14,7 @@ export const data_birthday = [
     name:"Pony patrol",
     description: "beautiful",
     size: "5x7 inches",
-    source:  "img/shark.jpg"
+    source:  "img/1000px.jpg"
 
 },
 
@@ -23,7 +23,7 @@ export const data_birthday = [
   name:"cat",
   description: "beautiful",
   size: "5x7 inches",
-  source:  "img/shark.jpg"
+  source:  "img/1000px.jpg"
 
 },
 {
@@ -31,7 +31,7 @@ export const data_birthday = [
   name:"cat",
   description: "beautiful",
   size: "5x7 inches",
-  source:  "img/shark.jpg"
+  source:  "img/1000px.jpg"
 
 },
 {
@@ -39,7 +39,7 @@ export const data_birthday = [
     name:"Pony patrol",
     description: "beautiful",
     size: "5x7 inches",
-    source:  "img/shark.jpg"
+    source:  "img/1000px.jpg"
 
 },
 {
@@ -47,7 +47,7 @@ export const data_birthday = [
     name:"Pony patrol",
     description: "beautiful",
     size: "5x7 inches",
-    source:  "img/shark.jpg"
+    source:  "img/1000px.jpg"
 
 },
 {
@@ -55,7 +55,7 @@ export const data_birthday = [
     name:"Pony patrol",
     description: "beautiful",
     size: "5x7 inches",
-    source:  "img/shark.jpg"
+    source:  "img/1000px.jpg"
 
 
 },
@@ -64,7 +64,7 @@ export const data_birthday = [
     name:"Pony patrol",
     description: "beautiful",
     size: "5x7 inches",
-    source:  "img/shark.jpg"
+    source:  "img/1000px.jpg"
 
 
 },

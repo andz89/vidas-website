@@ -1,37 +1,35 @@
-import {data_birthday} from "./data_birthday.js"
+import {data_wedding} from "./data_wedding.js"
 
-
-
-
-let section = document.querySelector(".section-a")
-for(let i = 0; i < data_birthday.length; i++){
+//wedding
+let section_wedding = document.querySelector(".section_wedding")
+for(let i = 0; i < data_wedding.length; i++){
     let li = document.createElement('li')
     li.className += "shadow-sm" 
     li.innerHTML =  `
     
     
-                    <img src="${data_birthday[i].source}" class="identifier" alt="...">
-                    <div id="${data_birthday[i].id}">
-                    <p class="title">${data_birthday[i].name}</p>
-                    <p class="lead">${data_birthday[i].description}</p>
-                    <p class="card-text">${data_birthday[i].size}</p>
+                    <img src="${data_wedding[i].source}" class="identifier" alt="...">
+                    <div id="${data_wedding[i].id}">
+                    <p class="title">${data_wedding[i].name}</p>
+                    <p class="lead">${data_wedding[i].description}</p>
+                    <p class="card-text">${data_wedding[i].size}</p>
                     </div>
              
             
 
     `
-  section.appendChild(li)
+  section_wedding.appendChild(li)
 }
 
-
 let modal = document.querySelector(".modal")
+let section_ul = document.querySelector("ul")
 function getId(e){
     
     if( e.classList == "identifier"){
         
          let id = e.nextElementSibling.getAttribute('id')
          modal.style.display = 'block';
-        let data_filtered = data_birthday.filter(function(r){
+        let data_filtered = data_wedding.filter(function(r){
         return r.id == id
         }).map(function(r){
         return r
@@ -55,7 +53,7 @@ function getId(e){
         `
       
         
-        section.style.display = "none"
+        section_ul.style.display = "none"
         modal.removeChild(modal.childNodes[0])
         modal.appendChild(div)
       
@@ -67,14 +65,14 @@ function getId(e){
         // Close
         function closeModal() {
         modal.style.display = 'none';
-        section.style.display = "grid"
+        section_ul.style.display = "grid"
         }
 
       // Close If Outside Click
       function outsideClick(e) {
       if (e.target == modal) {
       modal.style.display = 'none';
-      section.style.display = "grid"
+      section_ul.style.display = "grid"
       }
       }
       })
@@ -89,7 +87,7 @@ function getId(e){
 
 
 
-document.querySelector(".section-a").addEventListener("click",function(e){
+document.querySelector(".section_wedding").addEventListener("click",function(e){
 
     getId(e.target)
 })
