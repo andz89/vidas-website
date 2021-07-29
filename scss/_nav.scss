@@ -1,47 +1,95 @@
-nav{
-    
-    max-width: $max-width;
-    margin:auto;
-    font-weight: 300;
-    font-size: .9rem;
-    display:flex;
-    cursor:pointer;
-    width:100%;
-
-    img{
-    width: 40px;
-    height:40px;
-    margin: .7rem 1rem;
-    }
-    ul li:first-child{
-        color: $yellow;
-        }
-    ul{
-        list-style-type: none;
-        display: flex;
-
-       
-
-        li{
-        margin: 1.5rem 1rem;
-
-        a{
-          
-            color: #fff;
-            text-decoration: none;
-        }
-        }
-
-        li:hover{
-            color: $yellow;
-        }
-        .nav_home{
-            color: #d15f20;
-        }
-
-        
-
-    }
+.container{
  
+    height: 60px;
+    color: white;
+    width:100%;
+    background-color: $dark-blue;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    nav{
     
+        font-weight: 400;
+        font-size: .9rem;
+        display:flex;
+        cursor:pointer;
+      
+        img{
+        width: 40px;
+        height:40px;
+        margin: .7rem 1rem;
+        }
+        ul li:first-child{
+            color: $yellow;
+            }
+    
+            .menu{
+                display:none;
+            }
+        ul{
+            list-style-type: none;
+            display: flex;
+         
+        
+    
+            li{
+            margin: 1.5rem 1rem;
+           
+         
+            }
+    
+            a:hover{
+                color: $yellow;
+            }
+          
+    
+            a{
+                color: #fff;
+                text-decoration: none;
+             
+            }
+          
+    
+            
+    
+        }
+     
+        
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .container{
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+        font-size: .9rem;
+
+        img{
+            width: 35px;
+            height:35px;
+            margin: .9rem 0 0 10px;
+            }
+            .menu {
+            
+                display: block;
+                text-align: right;
+                width:100%;
+                padding: 10px;
+                margin-top: 10px;
+                font-size: 1rem;
+            }
+        ul {
+            li{
+                display: none;
+            }
+         
+        }
+
+           
+    }
 }

@@ -1,14 +1,2 @@
 
-.container{
- 
-    height: 60px;
-    color: white;
-    width:100%;
-    background-color: $dark-blue;
-    padding: 0 20px;
-    @keyframes modalOpen{
 
-        from{opacity: 0}
-        to{opacity: 1;}
-    }
-}

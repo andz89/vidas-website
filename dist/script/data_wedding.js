@@ -2,7 +2,7 @@
 export const data_wedding = [
 
     {
-      id : "001",
+      id : "w1",
       name:"Cars",
       description: "beautiful",
       size: "5x7 inches",
@@ -10,7 +10,7 @@ export const data_wedding = [
   
   },
   {
-    id : "002",
+    id : "w2",
       name:"Pony patrol",
       description: "beautiful",
       size: "5x7 inches",
@@ -19,7 +19,7 @@ export const data_wedding = [
   },
   
   {
-    id : "003",
+    id : "w3",
     name:"cat",
     description: "beautiful",
     size: "5x7 inches",
@@ -27,7 +27,7 @@ export const data_wedding = [
   
   },
   {
-    id : "004",
+    id : "w4",
     name:"cat",
     description: "beautiful",
     size: "5x7 inches",
@@ -35,7 +35,7 @@ export const data_wedding = [
   
   },
   {
-    id : "005",
+    id : "w5",
       name:"Pony patrol",
       description: "beautiful",
       size: "5x7 inches",
@@ -43,7 +43,7 @@ export const data_wedding = [
   
   },
   {
-    id : "006",
+    id : "w6",
       name:"Pony patrol",
       description: "beautiful",
       size: "5x7 inches",
@@ -51,7 +51,7 @@ export const data_wedding = [
   
   },
   {
-    id : "007",
+    id : "w7",
       name:"Pony patrol",
       description: "beautiful",
       size: "5x7 inches",
@@ -60,7 +60,7 @@ export const data_wedding = [
   
   },
   {
-    id : "008",
+    id : "w8",
       name:"Pony patrol",
       description: "beautiful",
       size: "5x7 inches",

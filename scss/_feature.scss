@@ -1,23 +1,35 @@
-.birthday_invitation_feature{
-    background-color: rgb(194, 228, 248);
+main .wedding_bg{
+    background-color: rgba(255, 192, 192, 0.5);
+}
+main .birthday_bg{
+    background-color: rgba(194, 228, 248, 0.411);
+}
+main .m-top{
+    margin-top: 80px;
+}
+.invitation_feature {
+
     color: $dark-blue;
     width:70%;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 0;
-
+   
+    a{
+        color: $dark-blue;
+        text-decoration: none;
+        }
    .header_title{
-       padding: 20px 0 0 20px;
-       font-size: 1.2rem;
+    
+       padding: 15px 0 0 20px;
+       font-size: 1.6rem;
+       font-weight: 400;
    }
+
     .options{
         padding:10px 20px 0 0;
         text-align:right;
         cursor: pointer;
 
-        a{
-            color: #333;
-            text-decoration: none;
-        }
     }
 
     ul{
@@ -42,12 +54,9 @@
             background-color: #fff;
             transition: transform 0.2s ease-in-out;
             height: 100%;
-        a{
-            color: #333;
-            text-decoration: none;
-        }
+         
             div{
-                padding:15px;
+                padding: 5px 10px;
 
                 .title{
 
@@ -81,11 +90,11 @@
         
 @media (max-width: 1810px) {
  
-    .birthday_invitation_feature{
+    .invitation_feature{
         width:95%;
      
     
-        .section_birthday_feature{
+        .section_feature{
     
             margin-bottom: 20px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -102,139 +111,14 @@
  .banner{
      font-size:.8rem;
  }
-.birthday_invitation_feature{
+.invitation_feature{
     width:90%;
     .header_title{
    
-        font-size: .75rem;
+        font-size: 1rem;
     }
 
-    .section_birthday_feature{
-
-        margin-bottom: 20px;
-        grid-template-columns: 1fr 1fr;
-        gap:10px;
-        padding:10px 10px 10px 10px;
-       
-    }
-
-}
-  
-   
-}
-
-.wedding_invitation_feature{
-    background-color: rgb(248, 194, 206);
-    color: $dark-blue;
-    width:70%;
-    margin: 20px auto;
-    padding: 0;
-
-   .header_title{
-       padding: 20px 0 0 20px;
-       font-size: 1.2rem;
-   }
-    .options{
-        padding:10px 20px 0 0;
-        text-align:right;
-        cursor: pointer;
-
-        a{
-            color: #333;
-            text-decoration: none;
-        }
-    }
-
-    ul{
-     
-        
-      
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap:20px;
-        margin:auto;
-        color: #333;
-        height: 80%;
-        font-size: 0.8rem;
-        cursor: pointer;
-        padding:10px 20px 20px 20px;
-        list-style-type: none;
-        text-align: left;
-        
-      
-    
-        li{
-            background-color: #fff;
-            transition: transform 0.2s ease-in-out;
-            height: 100%;
-        a{
-            color: #333;
-            text-decoration: none;
-        }
-            div{
-                padding:15px;
-
-                .title{
-
-                    font-size: 1.2rem;
-                    font-weight:500;
-                }
-               .lead{
-                font-family: 'Open Sans', sans-serif;
-                font-size: 1rem;
-          
-               }
-            }
-        }
-        li:hover{
-            // transform: scale(1.01);
-            
-        }
-        img{
-            width: 100%;
-         }
-       
-      
-        
-    }
-    
-    
-
-    }
-
-
-            
-@media (max-width: 1810px) {
- 
-    .wedding_invitation_feature{
-        width:95%;
-     
-    
-        .section_wedding_feature{
-    
-            margin-bottom: 20px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap:10px;
-            padding:10px 10px 10px 10px;
-            
-        }
-    
-    }
-      
-       
-    }
-    @media (max-width: 600px) {
-        .banner{
-            font-size:.8rem;
-        }
-.wedding_invitation_feature{
-    width:90%;
-    .header_title{
-   
-        font-size: .75rem;
-    };
-
-    .section_wedding_feature{
+    .section_feature{
 
         margin-bottom: 20px;
         grid-template-columns: 1fr 1fr;

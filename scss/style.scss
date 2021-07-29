@@ -1,10 +1,7 @@
 @import 'config';
 @import 'utilities';
 @import 'nav';
-@import 'birthday';
 @import 'contact';
-@import 'slides';
-@import 'preview';
 @import 'modal';
 @import 'banner';
 @import 'feature';
@@ -15,7 +12,10 @@
     font-family: 'Roboto';
  
 }
-body{
-background-color: rgb(245, 245, 245);
-}
+    @keyframes modalOpen{
+
+        from{opacity: 0}
+        to{opacity: 1;}
+    }
+
 
