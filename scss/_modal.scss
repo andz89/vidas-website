@@ -15,7 +15,7 @@
 
   .modal-content {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin:2% auto 2% auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -34,14 +34,15 @@
     .details{
      
        color: #333;
-       padding:10px 20px 20px 20px;
+       padding:15px 30px 20px 20px;
     
       
        h5{
 
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 300;
         margin-bottom: 2px;
+        color: $dark-blue;
        }
        .size{
         font-size: 1.5rem;
@@ -69,13 +70,35 @@
   }
 
 
-  @media (max-width: 780px) {
+  @media (max-width:1170px) {
     .modal{
 
       .modal-content{
         grid-template-columns: 1fr;
       
+        .details{
 
+          h5{
+
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2px;
+     
+           }
+
+           .size{
+            font-size: 1rem;
+            font-weight: 200;
+            margin-bottom: 20px;
+            color: rgb(56, 55, 55);
+           }
+           .description{
+             line-height:1.4;
+             font-size: 1rem;
+           }
+          
+        }
+  
 
 
         

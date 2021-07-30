@@ -3,7 +3,7 @@ export const data_wedding = [
 
     {
       id : "w1",
-      name:"Cars",
+      name:"Floral Old Rose Invitation",
       description: "beautiful",
       size: "5x7 inches",
       source:  "img/wedding.jpg"
@@ -11,7 +11,7 @@ export const data_wedding = [
   },
   {
     id : "w2",
-      name:"Pony patrol",
+      name:"Oceans Blue Invitation",
       description: "beautiful",
       size: "5x7 inches",
       source:  "img/wedding.jpg"
@@ -20,7 +20,7 @@ export const data_wedding = [
   
   {
     id : "w3",
-    name:"cat",
+    name:"Garden white Invitation",
     description: "beautiful",
     size: "5x7 inches",
     source:  "img/wedding.jpg"
@@ -28,7 +28,7 @@ export const data_wedding = [
   },
   {
     id : "w4",
-    name:"cat",
+    name:"Mocca Brown Theme Invitation",
     description: "beautiful",
     size: "5x7 inches",
     source:  "img/wedding.jpg"
@@ -36,7 +36,7 @@ export const data_wedding = [
   },
   {
     id : "w5",
-      name:"Pony patrol",
+      name:"Simple Elegant Invitation",
       description: "beautiful",
       size: "5x7 inches",
       source:  "img/wedding.jpg"
@@ -44,7 +44,7 @@ export const data_wedding = [
   },
   {
     id : "w6",
-      name:"Pony patrol",
+      name:"Red Rose Invitation",
       description: "beautiful",
       size: "5x7 inches",
       source:  "img/wedding.jpg"
@@ -52,7 +52,7 @@ export const data_wedding = [
   },
   {
     id : "w7",
-      name:"Pony patrol",
+      name:"sky swift Invitation",
       description: "beautiful",
       size: "5x7 inches",
       source:  "img/wedding.jpg"
@@ -61,7 +61,7 @@ export const data_wedding = [
   },
   {
     id : "w8",
-      name:"Pony patrol",
+      name:"Nature Green Invitation",
       description: "beautiful",
       size: "5x7 inches",
       source:  "img/wedding.jpg"

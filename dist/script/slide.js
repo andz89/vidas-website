@@ -17,7 +17,6 @@ if(section_id == "birthday"){
                       <img src="${data_birthday[i].source}" class="identifier" alt="...">
                       <div id="${data_birthday[i].id}">
                       <p class="title">${data_birthday[i].name}</p>
-                      <p class="card-text">${data_birthday[i].size}</p>
                       </div>
                
               
@@ -38,7 +37,6 @@ for(let i = 0; i < data_wedding.length; i++){
                     <img src="${data_wedding[i].source}" class="identifier" alt="...">
                     <div id="${data_wedding[i].id}">
                     <p class="title">${data_wedding[i].name}</p>
-                    <p class="card-text">${data_wedding[i].size}</p>
                     </div>
              
     `
