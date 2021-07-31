@@ -114,8 +114,3 @@ document.querySelector("main").addEventListener("click",function(e){
     getId(e.target)
 })
 
-let menu = document.querySelector('.menu-icon')
-
-menu.addEventListener("click", function(e){
- 
-})

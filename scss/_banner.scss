@@ -1,7 +1,7 @@
 .banner{
     color: $dark-blue;
     text-align: center;
-    margin-top: 80px;
+    margin: 80px auto 0 auto;
 
     h1{
         font-size: 2rem;
@@ -27,3 +27,22 @@
 
 }
 }
+
+@media (max-width: 400px) {
+
+    .banner{
+        width:90%;
+       
+
+    
+        h1{
+            font-size: 1.2rem;
+            font-weight:400;
+        }
+       p{
+        font-size: .8rem;
+       }
+       
+    
+    }
+    }

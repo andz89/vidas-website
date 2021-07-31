@@ -1,16 +1,16 @@
 
 .contact{
-    animation-name: modalOpen;
-    animation-duration: 0.6000s; 
     margin:120px auto 0 auto;
     color: #333;
     background-color:$gray;
-    padding:10px 30px;
-    font-size: .9rem;
-    width:90%;
-    max-width: 530px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
+    font-size: .9rem;
+    width:100%;
+    max-width: 530px;
+    .contact-container{
+        width: 90%;
+        margin: auto;
+        padding:10px 10px;
     img{
         width:25px;
      
@@ -19,12 +19,13 @@
 
     h4{
         margin: 20px 0 20px 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
        
     }
      
 
         .call{
+            font-size: 1rem;
             align-items: center;
             display: grid;
             grid-template-columns: 1fr 8fr;
@@ -32,6 +33,12 @@
 
             div{
                 line-height:20px;
+                span{
+                    font-size: 1rem;
+                }
+                strong{
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -46,6 +53,13 @@
 
             div{
                 line-height:20px;
+
+                span{
+                    font-size: 1rem;
+                }
+                strong{
+                    font-size: 1rem;
+                }
             }
         }
     
@@ -62,6 +76,13 @@
 
             div{
                 line-height:20px;
+
+                span{
+                    font-size: 1rem;
+                }
+                strong{
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -72,6 +93,12 @@
             margin-bottom: 20px;
             div{
                 line-height:20px;
+                span{
+                    font-size: 1rem;
+                }
+                strong{
+                    font-size: 1rem;
+                }
             }
 
         }
@@ -79,6 +106,156 @@
 
 
    
-
+    }
     
 }
+
+@media (max-width: 700px) {
+
+    .contact{
+       
+  
+        width:90%;
+      
+     .contact-container{
+         
+        h4{
+            margin: 20px 0 20px 0;
+            font-size: .9rem;
+           
+        }
+         
+    
+            .call{
+              
+    
+                div{
+                    line-height:20px;
+                    span{
+                        font-size: .8rem;
+                    }
+                    strong{
+                        font-size: .9rem;
+                    }
+                }
+            }
+    
+            .email{
+            
+    
+                div{
+                    line-height:20px;
+    
+                    span{
+                        font-size: .8rem;
+                    }
+                    strong{
+                        font-size: .9rem;
+                    }
+                }
+            }
+        
+            
+            .facebook{
+            
+               
+              
+    
+                div{
+                    line-height:20px;
+    
+                    span{
+                        font-size: .8rem;
+                    }
+                    strong{
+                        font-size: .9rem;
+                    }
+                }
+            }
+    
+            .address{
+               
+                div{
+                    line-height:20px;
+                    span{
+                        font-size: .8rem;
+                    }
+                    strong{
+                        font-size: .9rem;
+                    }
+                }
+    
+            }
+          
+    
+      
+       
+       
+    
+    }
+}
+    }
+
+    
+@media (max-width: 400px) {
+
+    .contact{
+   
+
+     .contact-container{
+
+            img{
+            width:25px;
+
+            }
+
+
+            h4{
+            margin: 20px 0 20px 0;
+            font-size: .9rem;
+            text-align: center;
+            }
+
+    
+            .call{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                margin-bottom: 20px;
+            }
+            .email{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                margin-bottom: 20px;
+            }
+        
+            
+            .facebook{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                margin-bottom: 20px;
+            }
+    
+            .address{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                margin-bottom: 20px;
+            
+            }
+          
+    
+      
+       
+       
+    
+    }
+}
+    }
+   

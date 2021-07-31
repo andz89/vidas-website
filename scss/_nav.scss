@@ -9,7 +9,7 @@
     z-index: 1;
     top: 0;
     nav{
-    
+        user-select:none;
         font-weight: 400;
         font-size: .9rem;
         display:flex;
@@ -20,19 +20,18 @@
         height:40px;
         margin: .7rem 1rem;
         }
-        ul li:first-child{
-            color: $yellow;
-            }
+     
     
-            .menu{
-                display:none;
-            }
+     
         ul{
             list-style-type: none;
             display: flex;
          
         
-    
+            span{
+               
+                display:none;
+            }
             li{
             margin: 1.5rem 1rem;
            
@@ -54,6 +53,10 @@
             
     
         }
+        .menu{
+            user-select:none;
+            display:none;
+        }
      
         
     }
@@ -64,32 +67,77 @@
 @media (max-width: 700px) {
     .container{
         padding: 0;
-    }
+  
     nav{
         width: 100%;
         font-size: .9rem;
-
+        
         img{
             width: 35px;
             height:35px;
             margin: .9rem 0 0 10px;
             }
-            .menu {
+        .menu {
+            position: relative;
+            display:block;
+            color: #fff;
+            width:100%;
+            font-size: 1rem;
+            span{
+            position: absolute;
+            right:0;
+            top: 20px;
+            padding-right: 10px;
+     
+            }
             
-                display: block;
-                text-align: right;
-                width:100%;
-                padding: 10px;
-                margin-top: 10px;
-                font-size: 1rem;
+            }
+
+            .ul_background{
+            animation-name: modalOpen;
+            animation-duration: 0.6000s; 
+            display:none;
+            position: fixed;
+            z-index: 99999;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: rgba(235, 230, 230, 0.5);
+            
             }
         ul {
+            background-color: rgba(51, 51, 51, 0.972);
+            flex-direction:column;
+            color: #333;
+            height:100vh;
+            width: 170px;
+            position:absolute;
+            right:0;
+          
+          
+      
+
+            .nav_home{
+                padding-top:30px;
+            }
+            span{
+            color: #fff;
+            position: absolute;
+            right: 0;
+            padding:15px 30px 20px 20px;
+            font-size:20px;
+            display:block;
+            }
             li{
-                display: none;
+                margin: 15px;
             }
          
         }
+      
 
            
     }
+}
 }

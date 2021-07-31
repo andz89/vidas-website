@@ -75,7 +75,8 @@
 
       .modal-content{
         grid-template-columns: 1fr;
-      
+        width: 100%;
+        margin:auto;
         .details{
 
           h5{
@@ -107,3 +108,46 @@
 
     
   }
+
+  
+  @media (max-width:400px){
+    .modal{
+
+      .modal-content{
+        grid-template-columns: 1fr;
+      
+        .details{
+
+          h5{
+
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2px;
+     
+           }
+
+           .size{
+            font-size: .9rem;
+            font-weight: 200;
+            margin-bottom: 20px;
+            color: rgb(56, 55, 55);
+           }
+           .description{
+             line-height:1.4;
+             font-size: .8rem;
+           }
+          
+        }
+  
+
+
+        
+      }
+    }
+
+    
+  }
+
+
+
+  
