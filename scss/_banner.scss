@@ -2,6 +2,31 @@
     color: $dark-blue;
     text-align: center;
     margin: 80px auto 0 auto;
+    height:100%;
+    .facebook-link{
+        margin: 10px auto 10px auto;
+       
+
+       
+        a{
+            padding: 5px 10px;
+            background-color:#e8f3ffc2;
+            color: #333;
+            text-decoration:none;
+            border-radius: 5px;
+            box-shadow: 1px 2px #4747471a;
+            font-size: .9rem;
+            
+        }
+        a:focus{
+            color:#333;
+            text-decoration: none; 
+        }
+    }
+    p{
+        font-size: .9rem;
+        color: #333;
+    }
 
     h1{
         font-size: 2rem;
@@ -33,7 +58,12 @@
     .banner{
         width:90%;
        
-
+        .facebook-link{
+            
+        a{
+            font-size:.7rem;
+        }
+        }
     
         h1{
             font-size: 1.2rem;
@@ -42,6 +72,10 @@
        p{
         font-size: .8rem;
        }
+       img{
+
+        width:60px;
+    }
        
     
     }

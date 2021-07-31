@@ -11,6 +11,7 @@
     width: 100%;
     overflow: scroll;
     background-color: rgba(235, 230, 230, 0.5);
+    user-select:none;
   }
 
   .modal-content {

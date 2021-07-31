@@ -1,6 +1,6 @@
 
 .contact{
-    margin:120px auto 0 auto;
+    margin:120px auto 40px auto;
     color: #333;
     background-color:$gray;
 
@@ -82,6 +82,15 @@
                 }
                 strong{
                     font-size: 1rem;
+
+                    a{
+                        color:#333;
+                        text-decoration: none;
+                    }
+                    a:focus{
+                        color:#333;
+                        text-decoration: none; 
+                    }
                 }
             }
         }
