@@ -6,7 +6,9 @@ export const data_wedding = [
       name:"Floral Old Rose Invitation",
       description: "beautiful",
       size: "5x7 inches",
+      price: "10.00 Php",
       source:  "img/wedding.jpg"
+      
   
   },
   {
@@ -14,6 +16,7 @@ export const data_wedding = [
       name:"Oceans Blue Invitation",
       description: "beautiful",
       size: "5x7 inches",
+      price: "10.00 Php",
       source:  "img/wedding.jpg"
   
   },
@@ -23,6 +26,7 @@ export const data_wedding = [
     name:"Garden white Invitation",
     description: "beautiful",
     size: "5x7 inches",
+    price: "10.00 Php",
     source:  "img/wedding.jpg"
   
   },
@@ -31,6 +35,7 @@ export const data_wedding = [
     name:"Mocca Brown Theme Invitation",
     description: "beautiful",
     size: "5x7 inches",
+    price: "10.00 Php",
     source:  "img/wedding.jpg"
   
   },
@@ -39,6 +44,7 @@ export const data_wedding = [
       name:"Simple Elegant Invitation",
       description: "beautiful",
       size: "5x7 inches",
+      price: "10.00 Php",
       source:  "img/wedding.jpg"
   
   },
@@ -47,6 +53,7 @@ export const data_wedding = [
       name:"Red Rose Invitation",
       description: "beautiful",
       size: "5x7 inches",
+      price: "10.00 Php",
       source:  "img/wedding.jpg"
   
   },
@@ -55,6 +62,7 @@ export const data_wedding = [
       name:"sky swift Invitation",
       description: "beautiful",
       size: "5x7 inches",
+      price: "10.00 Php",
       source:  "img/wedding.jpg"
   
   
@@ -64,6 +72,7 @@ export const data_wedding = [
       name:"Nature Green Invitation",
       description: "beautiful",
       size: "5x7 inches",
+      price: "10.00 Php",
       source:  "img/wedding.jpg"
   
   },
