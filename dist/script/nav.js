@@ -112,6 +112,7 @@ function getId(e){
           <p class="size">Availabale sizes: ${data.size}</p>
           <p class="header_description"> Description</p>
           <p class="description">${data.description}</p>
+          <a href="${data.link}">link</a>
           
         </div>
        
@@ -151,5 +152,7 @@ document.querySelector("main").addEventListener("click",function(e){
 
     getId(e.target)
 })
+
+
 
 
