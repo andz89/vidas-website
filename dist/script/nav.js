@@ -102,18 +102,21 @@ function getId(e){
         div.className += "modal-content" 
         div.innerHTML = `
           <div class="image-div">
+          <a href="${data.link}">
+       
         <img src="${data.source}" class="identifier"  alt="...">
+        </a>
+        <div class="view-image"><strong>•</strong> <p>Click the image to view high resolution photos</p></div>
         </div>
+
         <div id="${data.id}" class=details>
-        
+     
         <span class="close">← Back</span>
           <h5>${data.name}</h5>
           <h2>${data.price}</h2>
           <p class="size">Availabale sizes: ${data.size}</p>
           <p class="header_description"> Description</p>
           <p class="description">${data.description}</p>
-          <a href="${data.link}">link</a>
-          
         </div>
        
         
