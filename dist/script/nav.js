@@ -65,7 +65,7 @@ function clickLinks(e) {
     document.querySelector("body").classList.remove("spinner-1");
     document.querySelector("main").style.display = "block";
   document.querySelector(".container").style.display = "block";
-},.8000)
+},1000)
   });
 
 
@@ -105,8 +105,8 @@ function getId(e){
         <img src="${data.source}" class="identifier"  alt="...">
         </div>
         <div id="${data.id}" class=details>
-        <span class="close">&times;</span>
-       
+        
+        <span class="close">← Back</span>
           <h5>${data.name}</h5>
           <h2>${data.price}</h2>
           <p class="size">Availabale sizes: ${data.size}</p>
