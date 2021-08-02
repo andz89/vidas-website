@@ -114,12 +114,12 @@ function getId(e){
         <span class="close">← Back</span>
           <h5>${data.name}</h5>
           <h2>${data.price}</h2>
-          <p class="size">Availabale sizes: ${data.size}</p>
+          <p class="size">Size:${data.size}</p>
           <p class="header_description"> Description</p>
           <p class="description">${data.description}</p>
 
           <div class="modal-contact">
-          <h4> Call or message us  now for your oders and querries:</h4>
+          <h4> Contact us for your oders and querries:</h4>
           <div class="modal-flex">
                     <div class="modal-call">
                         
@@ -127,7 +127,7 @@ function getId(e){
                     </div>
   
                     <div class="modal-text">
-                        <div class="img_and_link"> <img  src="img/facebook5.svg"  alt=""> <a href="https://www.facebook.com/gwillevent">Gwill's Events Invitation and Souvenir</a> </div>
+                        <div class="img_and_link"> <img  src="img/facebook5.svg"  alt=""> <small>Click the link below to message us on facebook </small><a href="https://www.facebook.com/gwillevent">https://www.facebook.com/gwillevent</a> </div>
                     </div>
             </div>
         </div>

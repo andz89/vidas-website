@@ -3,11 +3,12 @@ export const data_wedding = [
 
     {
       id : "w1",
-      name:"Floral Old Rose Invitation",
-      description: "beautiful",
-      size: "5x7 inches",
-      price: "10.00 Php",
-      source:  "img/wedding.jpg"
+      name:"Wedding Souvenir Picture With Stand",
+      description: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque maxime iure perspiciatis, ut vero molestias culpa consequuntur quidem sed explicabo excepturi natus ipsa aliquam quibusdam voluptate dolores tempore consequatur minima!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque maxime iure perspiciatis, ut vero molestias culpa consequuntur quidem sed explicabo excepturi natus ipsa aliquam quibusdam voluptate dolores tempore consequatur.",
+      size: "6 inches height",
+      price: "75.00 Php",
+      source:  "img/w1.jpg",
+      link:"https://drive.google.com/drive/folders/1-rpMoBemrrUYFSaqARLEuc0-uZ22HYb9?usp=sharing"
       
   
   },
@@ -17,64 +18,10 @@ export const data_wedding = [
       description: "beautiful",
       size: "5x7 inches",
       price: "10.00 Php",
-      source:  "img/wedding.jpg"
+      source:  "img/wedding.jpg",
+      
   
   },
   
-  {
-    id : "w3",
-    name:"Garden white Invitation",
-    description: "beautiful",
-    size: "5x7 inches",
-    price: "10.00 Php",
-    source:  "img/wedding.jpg"
-  
-  },
-  {
-    id : "w4",
-    name:"Mocca Brown Theme Invitation",
-    description: "beautiful",
-    size: "5x7 inches",
-    price: "10.00 Php",
-    source:  "img/wedding.jpg"
-  
-  },
-  {
-    id : "w5",
-      name:"Simple Elegant Invitation",
-      description: "beautiful",
-      size: "5x7 inches",
-      price: "10.00 Php",
-      source:  "img/wedding.jpg"
-  
-  },
-  {
-    id : "w6",
-      name:"Red Rose Invitation",
-      description: "beautiful",
-      size: "5x7 inches",
-      price: "10.00 Php",
-      source:  "img/wedding.jpg"
-  
-  },
-  {
-    id : "w7",
-      name:"sky swift Invitation",
-      description: "beautiful",
-      size: "5x7 inches",
-      price: "10.00 Php",
-      source:  "img/wedding.jpg"
-  
-  
-  },
-  {
-    id : "w8",
-      name:"Nature Green Invitation",
-      description: "beautiful",
-      size: "5x7 inches",
-      price: "10.00 Php",
-      source:  "img/wedding.jpg"
-  
-  },
   
     ];

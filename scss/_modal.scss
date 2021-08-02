@@ -59,7 +59,7 @@
       }
     }
     .details{
-     
+      margin-top: 24px;
        color: #333;
        padding:15px 30px 20px 20px;
       position: relative;
@@ -191,7 +191,7 @@
         width: 100%;
         margin:auto;
         .details{
-
+          margin-top: -24px;
           h5{
 
             font-size: 2rem;
@@ -236,7 +236,7 @@
           padding:0px 10px;
           font-size: .9rem;
           align-items:center;
-          margin-top:-5px;
+          margin-top:-4px;
          
           
           strong{
@@ -245,14 +245,14 @@
           }
         }
         .details{
-
+          margin-top: 0px;
           h5{
 
             font-size: 1.5rem;
             font-weight: 300;
             margin-bottom: 2px;
             color: $dark-blue;
-     
+            
            }
 
            h2{
@@ -367,7 +367,7 @@
           font-size: .8rem;
           
           align-items:center;
-          margin-top:-5px;
+          margin-top:-4px;
         
           
           strong{
@@ -376,7 +376,7 @@
           }
         }
         .details{
-
+          margin-top: -10px;
           h5{
 
             font-size: 1.2rem;
