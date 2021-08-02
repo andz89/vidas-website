@@ -117,7 +117,22 @@ function getId(e){
           <p class="size">Availabale sizes: ${data.size}</p>
           <p class="header_description"> Description</p>
           <p class="description">${data.description}</p>
+
+          <div class="modal-contact">
+          <h4> Call or message us  now for your oders and querries:</h4>
+          <div class="modal-flex">
+                    <div class="modal-call">
+                        
+                        <div class="img_and_numbers">  <img src="img/call.svg"   alt=""> <p>827-3520 / 0955-846-4400</p></div>
+                    </div>
+  
+                    <div class="modal-text">
+                        <div class="img_and_link"> <img  src="img/facebook5.svg"  alt=""> <a href="https://www.facebook.com/gwillevent">Gwill's Events Invitation and Souvenir</a> </div>
+                    </div>
+            </div>
         </div>
+        </div>
+  
        
         
         `

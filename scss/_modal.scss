@@ -39,12 +39,13 @@
 
    
    
+
     .view-image{
       background-color:rgba(14, 13, 13, 0.822);
       color: #fefefe;
       font-weight: 200;
       padding:0px 10px;
-      font-size: 1rem;
+      font-size: .9rem;
       align-items:center;
       margin-top:-42px;
       text-align:center;
@@ -61,8 +62,7 @@
      
        color: #333;
        padding:15px 30px 20px 20px;
-    
-      
+      position: relative;
        h5{
 
         font-size: 2rem;
@@ -89,7 +89,71 @@
      
          line-height:1.4;
          font-size: 1rem;
+         margin-bottom:10px;
+      
        }
+
+       .modal-contact{
+        
+        background-color:rgb(224, 224, 224);
+        color: rgb(70, 70, 70);
+        padding: 10px;
+        font-size: .9rem;
+        h4{
+         text-align: center;
+         margin-bottom: 5px;
+        }
+        .modal-flex{
+         display:flex;
+         justify-content:center;
+    
+       
+ 
+        .modal-call{
+          display:flex;
+          justify-content:flex-start;
+      
+          width:100%;
+          
+       
+          img{
+            width: 22px;
+          }
+          .img_and_numbers{
+            align-items: center; 
+            display:flex;
+            margin: auto;
+            p{
+            
+            flex: 1;
+            margin-left: 5px;
+            }
+          }
+        }
+        .modal-text{
+          display:flex;
+          justify-content:flex-start;
+          flex-direction: column;
+          width:100%;
+        
+          .img_and_link{
+            align-items: center; 
+            display:flex;
+            margin: auto;
+ 
+          }
+          a{
+            text-decoration:none;
+            color: rgb(70, 70, 70);
+            margin-left: 8px;
+            flex: 1;
+          }
+          img{
+            width: 15px;
+          }
+        }
+     }
+    }
 
     }
 
@@ -172,7 +236,7 @@
           padding:0px 10px;
           font-size: .9rem;
           align-items:center;
-          margin-top:-33px;
+          margin-top:-5px;
          
           
           strong{
@@ -212,6 +276,64 @@
              font-size: .8rem;
            }
           
+           .modal-contact{
+       
+       
+            padding: 10px;
+            font-size: .9rem;
+            h4{
+          
+            }
+            .modal-flex{
+             display:flex;
+             justify-content:center;
+              flex-direction: column;
+            .modal-call{
+              margin-bottom: 20px;
+              
+           
+              img{
+                width: 22px;
+              }
+              .img_and_numbers{
+                align-items: center; 
+                display:flex;
+                margin: auto;
+                flex-direction: column;
+                p{
+                
+                flex: 1;
+                margin-left: 5px;
+                }
+              }
+            }
+            .modal-text{
+              display:flex;
+              justify-content:flex-start;
+     
+              width:100%;
+            
+              .img_and_link{
+                align-items: center; 
+                display:flex;
+                margin: auto;
+                flex-direction: column;
+     
+              }
+              a{
+                text-decoration:none;
+                color: rgb(70, 70, 70);
+                margin-left: 8px;
+                flex: 1;
+              }
+              img{
+                width: 15px;
+              }
+            }
+         }
+        
+          
+          }
         }
         span{
           font-size:1.1rem;
@@ -245,7 +367,7 @@
           font-size: .8rem;
           
           align-items:center;
-          margin-top:-25px;
+          margin-top:-5px;
         
           
           strong{
