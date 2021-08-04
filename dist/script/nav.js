@@ -116,7 +116,6 @@ function getId(e){
         <span class="close">← Back</span>
           <h5>${data.name}</h5>
           <h2>${data.price}</h2>
-          <p class="size">Size:${data.size}</p>
           <p class="header_description">Product Details:</p>
           <p class="description">${data.description}</p>
 
