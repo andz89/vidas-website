@@ -75,7 +75,6 @@ import {data_birthday} from "./data_birthday.js"
 import {data_wedding} from "./data_wedding.js"
 
 
-
 let modal = document.querySelector(".modal")
 function getId(e){
     
@@ -96,17 +95,20 @@ function getId(e){
         }).map(function(r){
         return r
         })
-
+       
         data_filtered.forEach(function(data){
         let div = document.createElement('div')
         div.className += "modal-content" 
+
+         // <a href="${data.link}">
+        //      </a>
         div.innerHTML = `
           <div class="image-div">
-          <a href="${data.link}">
-       
+         
+         <a href="${data.link}">
         <img src="${data.source}" class="identifier"  alt="...">
         </a>
-        <div class="view-image"><strong>•</strong> <p>Click the image to view high resolution photos</p></div>
+        <div class="view-image"><strong>•</strong> <p>Click the image to view more photos</p></div>
         </div>
 
         <div id="${data.id}" class=details>
@@ -167,7 +169,7 @@ function getId(e){
 }
 
 document.querySelector("main").addEventListener("click",function(e){
-
+    
     getId(e.target)
 })
 

@@ -33,7 +33,7 @@ for(let i = 0; i < data_feature_wedding.length; i++){
                     <img src="${data_wedding[i].source}" class="identifier" alt="...">
                     <div id="${data_wedding[i].id}">
                     <p class="title">${data_wedding[i].name}</p>
-                    <h4>${data_birthday[i].price}</h4>
+                    <h4>${data_wedding[i].price}</h4>
                     </div>
              
             

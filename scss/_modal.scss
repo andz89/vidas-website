@@ -140,7 +140,10 @@
             align-items: center; 
             display:flex;
             margin: auto;
- 
+          
+            small{
+              display: none;
+            }
           }
           a{
             text-decoration:none;
@@ -214,7 +217,8 @@
             line-height:1.5;
             font-size: .8rem;
           }
-          
+
+         
         }
   
 
@@ -237,11 +241,13 @@
           font-size: .9rem;
           align-items:center;
           margin-top:-4px;
-         
-          
+          background-color: transparent;
+          color: #333;
+          font-style: italic;
+          font-weight: 300;
           strong{
             font-size:1.5rem;
-          
+            
           }
         }
         .details{
@@ -298,8 +304,9 @@
               .img_and_numbers{
                 align-items: center; 
                 display:flex;
-                margin: auto;
+                margin: 5px auto 0 auto;
                 flex-direction: column;
+                gap: 5px;
                 p{
                 
                 flex: 1;
@@ -318,7 +325,13 @@
                 display:flex;
                 margin: auto;
                 flex-direction: column;
+               
      
+                small{
+                  display:block;
+                  margin-top:10px;
+                }
+                
               }
               a{
                 text-decoration:none;
