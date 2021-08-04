@@ -6,7 +6,7 @@ export const data_birthday = [
     name:"Mac Queen Cars Invitation",
     size: "Invitation and Envelope: Approximately 4x5 inches",
     price: "25.00 Php",
-    description: "Layout or the design is free. <br> We will add a picture of the celebrant on the invitation.",
+    description: " Printed in glossy photo paper <br>We will add a picture of the celebrant on the invitation.<br>Colored envelope included.<br> Layout or the design is free.<br>One sided print only.<br>Invitation and envelope sizes approximately 4x5 inches landscape",
     source:  "img/cars.jpg",
     link:'',
   
