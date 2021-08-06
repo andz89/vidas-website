@@ -19,7 +19,7 @@ export const data_wedding = [
     <small style='color:red'>This is made to order. Please allow us at least 1 week lead time.</small><br>
       `,
       price: "75.00 Php",
-      source:  ".img/w1.jpg",
+      source:  "img/w1.jpg",
       link:"https://drive.google.com/drive/folders/1fYLbBGAuYbj9CJRuQsFplhNKcyNRCBvV?usp=sharing"
    
       
@@ -43,7 +43,7 @@ export const data_wedding = [
       <small style='color:red'>This is made to order. Please allow us at least 1 week lead time.</small><br>
       `,
       price: "20.00 Php",
-      source:  ".img/wedding.jpg",
+      source:  "img/wedding.jpg",
       link:"https://drive.google.com/drive/folders/1fYLbBGAuYbj9CJRuQsFplhNKcyNRCBvV?usp=sharing"
   },
   

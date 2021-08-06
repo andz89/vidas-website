@@ -102,6 +102,7 @@ function getId(e){
 
          // <a href="${data.link}">
         //      </a>
+        
         div.innerHTML = `
           <div class="image-div">
          
@@ -124,11 +125,11 @@ function getId(e){
           <div class="modal-flex">
                     <div class="modal-call">
                         
-                        <div class="img_and_numbers">  <img src="img/call.svg"   alt=""> <p>827-3520 / 0955-846-4400</p></div>
+                        <div class="img_and_numbers">  <img src=".img/call.svg"   alt=""> <p>827-3520 / 0955-846-4400</p></div>
                     </div>
   
                     <div class="modal-text">
-                        <div class="img_and_link"> <img  src="img/facebook5.svg"  alt=""> <small>Click the link below to message us on facebook </small><a href="https://www.facebook.com/gwillevent">https://www.facebook.com/gwillevent</a> </div>
+                        <div class="img_and_link"> <img  src=".img/facebook5.svg"  alt=""> <small>Click the link below to message us on facebook </small><a href="https://www.facebook.com/gwillevent">https://www.facebook.com/gwillevent</a> </div>
                     </div>
             </div>
         </div>
