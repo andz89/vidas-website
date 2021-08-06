@@ -27,7 +27,7 @@ export const data_birthday = [
     6. Your additional details.<br> 
     <small style='color:red'>This is made to order. Please allow us at least 1 week lead time.</small><br>
     `,
-    source:  "img/cars.jpg",
+    source:  ".img/cars.jpg",
     link:'https://drive.google.com/drive/folders/1YrgVVnbHfB3yQd0JO-o-msweUO_A5uSb?usp=sharing',
   
 
@@ -61,7 +61,7 @@ export const data_birthday = [
   </small>
 
   `,
-  source:  "img/paw-patrol.jpg",
+  source:  ".img/paw-patrol.jpg",
   link:'https://drive.google.com/drive/folders/1diI2JPw6MPOoL4g7r1Bih5Y-fZVHlrVz?usp=sharing',
 
 }
