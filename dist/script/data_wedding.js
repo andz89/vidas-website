@@ -43,8 +43,8 @@ export const data_wedding = [
       <small style='color:red'>This is made to order. Please allow us at least 1 week lead time.</small><br>
       `,
       price: "20.00 Php",
-      source:  "img/wedding.jpg",
-      link:"https://drive.google.com/drive/folders/1fYLbBGAuYbj9CJRuQsFplhNKcyNRCBvV?usp=sharing"
+      source:  "img/wedding-rose-ref-magnet.jpg",
+      link:"https://drive.google.com/drive/folders/1TOshEi6Q7F3U1_-bOk7R7HQr_3y9xneL?usp=sharing"
   },
   
   

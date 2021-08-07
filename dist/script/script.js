@@ -9,13 +9,14 @@ let data_feature_birthday = list_birthday.slice(0,4)
 
 for(let i = 0; i < data_feature_birthday.length; i++){
     let li = document.createElement('li')
-    li.className += "shadow-sm" 
+    li.className += "item" 
     li.innerHTML =  `
                     <img src="${data_birthday[i].source}" class="identifier" alt="...">
                     <div id="${data_birthday[i].id}">
                     <p class="title">${data_birthday[i].name}</p>
                     <h4>${data_birthday[i].price}</h4>
                     </div>
+               
     ` 
   birthday_ul.appendChild(li)
 }
