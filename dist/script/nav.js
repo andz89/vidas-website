@@ -105,8 +105,8 @@ function getId(e){
         
         div.innerHTML = `
           <div class="image-div">
-         
-         <a href="${data.link}">
+     
+         <a href="${data.link}" target="blank">
         <img src="${data.source}" class="identifier"  alt="...">
         </a>
         <div class="view-image"><strong>•</strong> <p>Click the image to view more photos</p></div>
@@ -125,11 +125,11 @@ function getId(e){
           <div class="modal-flex">
                     <div class="modal-call">
                         
-                        <div class="img_and_numbers">  <img src=".img/call.svg"   alt=""> <p>827-3520 / 0955-846-4400</p></div>
+                        <div class="img_and_numbers">  <img src="img/call.svg"   alt=""> <p>827-3520 / 0955-846-4400</p></div>
                     </div>
   
                     <div class="modal-text">
-                        <div class="img_and_link"> <img  src=".img/facebook5.svg"  alt=""> <small>Click the link below to message us on facebook </small><a href="https://www.facebook.com/gwillevent">https://www.facebook.com/gwillevent</a> </div>
+                        <div class="img_and_link"> <img  src="img/facebook5.svg"  alt=""> <small>Click the link below to message us on facebook </small><a href="https://www.facebook.com/gwillevent">https://www.facebook.com/gwillevent</a> </div>
                     </div>
             </div>
         </div>
@@ -176,3 +176,21 @@ document.querySelector("main").addEventListener("click",function(e){
 
 
 
+// /* Get the element you want displayed in fullscreen mode (a video in this example): */
+// var elem = document.getElementById("frame");
+
+// /* When the openFullscreen() function is executed, open the video in fullscreen.
+// Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
+// function openFullscreen() {
+//   if (elem.requestFullscreen) {
+//     elem.requestFullscreen();
+//   } else if (elem.webkitRequestFullscreen) { /* Safari */
+//     elem.webkitRequestFullscreen();
+//   } else if (elem.msRequestFullscreen) { /* IE11 */
+//     elem.msRequestFullscreen();
+//   }
+// }
+// window.addEventListener('click', function(e) {
+
+//   openFullscreen()
+// })
