@@ -42,7 +42,7 @@ export const data_birthday = [
   price: "25.00 Php",
   display:true,
   description: `
-  10 pcs Minimun order <br>
+    10 pcs Minimun order <br>
     Printed in glossy photo paper <br>
     We will add a picture of the celebrant on the invitation.<br>
     Colored envelope included. <br> 

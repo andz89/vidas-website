@@ -43,7 +43,7 @@ clickLinks(e.target)
 
 //show css loader in ul element when clicking in nav
 function clickLinks(e) {
-  
+
   if(e.classList == "link"){
     a.forEach(function(r){
       r.style.color = "white"
@@ -58,8 +58,8 @@ function clickLinks(e) {
     <div class="circle"></div>
     </div>
     `
-
-   ul.appendChild(div)
+  
+  e.appendChild(div)
     })
   }
 }

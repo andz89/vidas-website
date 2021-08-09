@@ -5,9 +5,9 @@
 
     .loading {
         position: absolute;
-        top: 0;
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: -10px;
+         right: 0;
+         margin-right: 10px;
         display: flex;
         transition: opacity .3s ease-in;
     }
