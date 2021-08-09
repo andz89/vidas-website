@@ -1,10 +1,17 @@
+
+
+
+
+
+
+//------------------------------nav--------------------------------
 let menu = document.querySelector('.menu-icon')
 let a = document.querySelectorAll("nav div ul li a")
 let ul = document.querySelector("nav div ul")
 let nav_ul_span = document.querySelector("ul span")
 let ul_background = document.querySelector('.ul_background')
 
-//tablet and mobile script
+//tablet and mobile script nav
 menu.addEventListener("click", function(e){
  
   ul_background.style.transform = "translateX(0%)";
@@ -16,9 +23,8 @@ ul_background.style.transform = "translateX(100%)";
 
 })
 
-  
+// Outside Click Close
 window.addEventListener('click', outsideClick);
-// Close If Outside Click
 function outsideClick(e) {
 if (e.target == ul_background) {
   ul_background.style.transform = "translateX(100%)";
@@ -26,15 +32,15 @@ if (e.target == ul_background) {
 }
 }
 
+
+//click in ul element
 ul.addEventListener("click", function(e){
+clickLinks(e.target)
 
- 
-  clickLinks(e.target)
-  
-  })
+})
 
 
-  //show load spinner when click in menu
+//show load spinner when click in menu
 function clickLinks(e) {
 
   if(e.classList == "link"){
@@ -64,7 +70,9 @@ function clickLinks(e) {
 
 
 
-//modal
+//------------------------------modal--------------------------------
+
+
 import {data_birthday} from "./data_birthday.js"
 import {data_wedding} from "./data_wedding.js"
 
@@ -76,18 +84,16 @@ function getId(e){
         
          let id = e.nextElementSibling.getAttribute('id')
 
-         let birthday_id;
+         let id_type;
         if(id.startsWith("b")){
-          birthday_id = data_birthday;
+          id_type = data_birthday;
         }
         if(id.startsWith("w")){
-          birthday_id = data_wedding;
+          id_type = data_wedding;
         }
 
-        let data_filtered = birthday_id.filter(function(r){
-        return r.id == id
-        }).map(function(r){
-        return r
+        let data_filtered = id_type.filter(function(e){
+        return e.id == id
         })
        
         data_filtered.forEach(function(data){
@@ -145,7 +151,7 @@ function getId(e){
         document.querySelector("body").style.overflow = 'auto';
         }
 
-      // Close If Outside Click
+      //  Outside Click close
       function outsideClick(e) {
       if (e.target == modal) {
       modal.style.display = 'none';
