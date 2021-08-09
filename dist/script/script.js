@@ -7,6 +7,7 @@
 //------------------------------nav--------------------------------
 let menu = document.querySelector('.menu-icon')
 let a = document.querySelectorAll("nav div ul li a")
+
 let ul = document.querySelector("nav div ul")
 let nav_ul_span = document.querySelector("ul span")
 let ul_background = document.querySelector('.ul_background')
@@ -40,19 +41,25 @@ clickLinks(e.target)
 })
 
 
-//show load spinner when click in menu
+//show css loader in ul element when clicking in nav
 function clickLinks(e) {
   
   if(e.classList == "link"){
-
-    
-    // document.querySelector("main").style.display = "none";
-    // document.querySelector(".container").style.display = "none";
-
     a.forEach(function(r){
       r.style.color = "white"
     e.style.color = "#d15f20"
-    ul.classList.add("loader-1");
+    let div = document.createElement('div')
+
+    div.innerHTML = 
+    `
+    <div class="loading">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    </div>
+    `
+
+   ul.appendChild(div)
     })
   }
 }
