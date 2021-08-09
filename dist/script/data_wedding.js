@@ -5,7 +5,7 @@ export const data_wedding = [
       id : "w1",
       name:"Wedding Souvenir Picture With Display Stand",
       price: "75.00 Php",
-      display:false,
+      display:true,
       description: `
     25 pcs Minimun order <br>
     Printed in glossy photo paper <br>
