@@ -1,0 +1,59 @@
+
+
+  
+  @media (max-width:700px){
+/* Spinner 1 */
+.loader-1:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height:20px;
+    right:0;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    border-top-color: coral;
+    animation: loader 0.7s linear infinite;
+  }
+  
+  /* loader 2 */
+  .loader-2:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    right:0;
+    width: 20px;
+    height:20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top-color: coral;
+    border-bottom-color: coral;
+    animation: loader 0.7s ease infinite;
+  }
+  
+  /* loader 3 */
+  .loader-3:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    right:0;
+    width: 20px;
+    height:20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-top: 1px solid coral;
+    border-right: 1px solid transparent;
+    animation: loader 0.7s linear infinite;
+  }
+  
+  @keyframes loader {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+ 
+    
+      }
+ 

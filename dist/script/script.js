@@ -45,13 +45,14 @@ function clickLinks(e) {
 
   if(e.classList == "link"){
 
-    document.querySelector("body").classList.add("spinner-1");
-    document.querySelector("main").style.display = "none";
-    document.querySelector(".container").style.display = "none";
+    
+    // document.querySelector("main").style.display = "none";
+    // document.querySelector(".container").style.display = "none";
 
     a.forEach(function(r){
       r.style.color = "white"
     e.style.color = "#d15f20"
+    e.classList.add("loader-1");
     })
   }
 }
