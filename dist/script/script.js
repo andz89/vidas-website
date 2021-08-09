@@ -42,7 +42,7 @@ clickLinks(e.target)
 
 //show load spinner when click in menu
 function clickLinks(e) {
-
+  
   if(e.classList == "link"){
 
     
@@ -52,7 +52,7 @@ function clickLinks(e) {
     a.forEach(function(r){
       r.style.color = "white"
     e.style.color = "#d15f20"
-    e.classList.add("loader-1");
+    ul.classList.add("loader-1");
     })
   }
 }

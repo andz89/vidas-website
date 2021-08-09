@@ -9,11 +9,11 @@
     position: absolute;
     width: 20px;
     height:20px;
-    right:0;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
     border-radius: 50%;
-    border: 1px solid lightgray;
-    border-top-color: coral;
+    border: 3px solid lightgray;
+    border-top-color: teal;
     animation: loader 0.7s linear infinite;
   }
   
@@ -22,14 +22,15 @@
     content: "";
     box-sizing: border-box;
     position: absolute;
-    right:0;
+    margin-left: 30px;
+    margin-top: 10px;
     width: 20px;
     height:20px;
-    margin-right: 10px;
+ 
     border-radius: 50%;
-    border: 1px solid transparent;
-    border-top-color: coral;
-    border-bottom-color: coral;
+    border: 2px solid transparent;
+    border-top-color: teal;
+    border-bottom-color: teal;
     animation: loader 0.7s ease infinite;
   }
   
@@ -38,13 +39,14 @@
     content: "";
     box-sizing: border-box;
     position: absolute;
-    right:0;
+  
     width: 20px;
     height:20px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
     border-radius: 50%;
-    border-top: 1px solid coral;
-    border-right: 1px solid transparent;
+    border-top: 2px solid teal;
+    border-right: 2px solid transparent;
     animation: loader 0.7s linear infinite;
   }
   
