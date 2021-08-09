@@ -1,25 +1,18 @@
 main{
         display:none;
 }
-// main .bg{
-//     background-color: rgba(218, 238, 246, 0.287);
-// }
-
 main .m-top{
     margin-top: 80px;
 }
 
-.invitation_feature {
+.section {
    
     color: $dark-blue;
     width:70%;
     margin: 40px auto;
     padding: 0;
    
-    a{
-        color: $dark-blue;
-        text-decoration: none;
-        }
+    
    .header_title{
     
        padding: 15px 0 0 20px;
@@ -104,11 +97,11 @@ main .m-top{
         
 @media (max-width: 1810px) {
  
-    .invitation_feature{
+    .section{
         width:95%;
      
     
-        .section_feature{
+        ul{
     
             margin-bottom: 20px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -138,11 +131,11 @@ main .m-top{
         
 @media (max-width: 900px) {
  
-    .invitation_feature{
+    .section{
         width:95%;
      
     
-        .section_feature{
+        ul{
     
             margin-bottom: 20px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -177,7 +170,7 @@ main .m-top{
  .banner{
      font-size:.8rem;
  }
-.invitation_feature{
+.section{
     width:100%;
     .header_title{
    
@@ -193,7 +186,7 @@ main .m-top{
     }
 
 
-    .section_feature{
+    ul{
 
         margin-bottom: 18px;
         grid-template-columns: 1fr 1fr;
@@ -225,14 +218,14 @@ main .m-top{
     .banner{
         font-size:1rem;
     }
-   .invitation_feature{
+   .section{
        width:100%;
        .header_title{
       
            font-size: 1.2rem;
        }
    
-       .section_feature{
+       ul{
    
 
           li{

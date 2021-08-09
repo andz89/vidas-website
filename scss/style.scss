@@ -1,10 +1,9 @@
 @import 'config';
-@import 'utilities';
 @import 'nav';
 @import 'contact';
 @import 'modal';
 @import 'banner';
-@import 'feature';
+@import 'section';
 @import 'spinner';
 
 * {
@@ -21,4 +20,7 @@
     }
 
 
-
+a{
+        color: $dark-blue;
+        text-decoration: none;
+        }
