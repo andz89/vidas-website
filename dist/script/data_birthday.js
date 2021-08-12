@@ -4,7 +4,7 @@ export const data_birthday = [
   {
     id : "b1",
     name:"Mac Queen Cars Invitation",
-    price: "25.00 Php",
+    price: "20.00 Php",
     display:true,
     description: `
     10 pcs Minimun order <br>
@@ -39,7 +39,7 @@ export const data_birthday = [
 {
   id : "b2",
   name:"Paw Patrol Invitation",
-  price: "25.00 Php",
+  price: "20.00 Php",
   display:true,
   description: `
     10 pcs Minimun order <br>
@@ -72,7 +72,7 @@ export const data_birthday = [
 {
   id : "b3",
   name:"Pj Mask Invitation",
-  price: "25.00 Php",
+  price: "20.00 Php",
   display:true,
   description: `
     10 pcs Minimun order <br>

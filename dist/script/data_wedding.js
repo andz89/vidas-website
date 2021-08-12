@@ -29,7 +29,7 @@ export const data_wedding = [
   },
   {
     id : "w2",
-      name:"Old Rose Ref Magnet Wedding Souvenir",
+      name:"Ref Magnet Wedding Souvenir",
       display:true,
       price: "20.00 Php",
       description: `

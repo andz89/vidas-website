@@ -35,15 +35,15 @@ function loopData(id, data){
   if(birthday != null) {
     for(let i = 0; i < data.length; i++){
         let li = document.createElement('li')
-        li.className += "shadow-sm" 
+      
         li.innerHTML =  `
-        
+     
         <img src="${data[i].source}" class="identifier" alt="...">
         <div id="${data[i].id}">
         <p class="title">${data[i].name}</p>
         <h4>${data[i].price}</h4>
         </div>
-                 
+          
         `
       birthday.appendChild(li)
     }

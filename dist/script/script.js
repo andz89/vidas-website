@@ -1,9 +1,5 @@
 
 
-
-
-
-
 //------------------------------nav--------------------------------
 let menu = document.querySelector('.menu-icon')
 let a = document.querySelectorAll("nav div ul li a")
@@ -48,21 +44,13 @@ function clickLinks(e) {
     a.forEach(function(r){
       r.style.color = "white"
     e.style.color = "#d15f20"
-    let div = document.createElement('div')
 
-    div.innerHTML = 
-    `
-    <div class="loading">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    </div>
-    `
-  
-  e.appendChild(div)
     })
   }
 }
+
+
+//---------------------reload css-------------------------------
   //show spinner when reload
   document.querySelector("body").classList.add("spinner-1");
   
@@ -83,28 +71,74 @@ function clickLinks(e) {
 
 import {data_birthday} from "./data_birthday.js"
 import {data_wedding} from "./data_wedding.js"
+let modal = document.createElement('div')
+modal.className += "modal" 
+
+let span = document.createElement('span')
+span.className += "close" 
+span.innerHTML =`
+ <span class="close">← Back</span> 
+`
 
 
-let modal = document.querySelector(".modal")
+document.body.appendChild(modal)
+
+
+
+
+
+
+
+// let modal = document.querySelector(".modal")
 function getId(e){
     
     if( e.classList == "identifier"){
         
          let id = e.nextElementSibling.getAttribute('id')
+    
+      //clone an array
+      //remove the target data
+      //go the orignal array get the data of target array
+      //make a new array and add the target data and add also the clone array
+
+      
+       
+
+  
+
 
          let id_type;
         if(id.startsWith("b")){
-          id_type = data_birthday;
+          let clone;
+          clone = data_birthday.filter(function(e){
+         return e.id != id
+         })
+        
+         let target_data = data_birthday.filter(function(e){
+           return e.id == id
+         })
+
+        let new_array = target_data.concat(clone);
+
+          id_type = new_array
         }
         if(id.startsWith("w")){
-          id_type = data_wedding;
+          let clone;
+          clone = data_wedding.filter(function(e){
+         return e.id != id
+         })
+        
+         let target_data = data_wedding.filter(function(e){
+           return e.id == id
+         })
+
+        let new_array = target_data.concat(clone);
+
+          id_type = new_array
+  
         }
 
-        let data_filtered = id_type.filter(function(e){
-        return e.id == id
-        })
-       
-        data_filtered.forEach(function(data){
+       id_type.forEach(function(data){
         let div = document.createElement('div')
         div.className += "modal-content" 
 
@@ -119,7 +153,7 @@ function getId(e){
 
         <div id="${data.id}" class=details>
      
-        <span class="close">← Back</span>
+        
           <h5>${data.name}</h5>
           <h2>${data.price}</h2>
           <p class="header_description">Product Details:</p>
@@ -145,7 +179,8 @@ function getId(e){
         `
         document.querySelector("body").style.overflow = 'hidden';
         modal.style.display = 'block';
-        modal.removeChild(modal.childNodes[0])
+        modal.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        modal.appendChild(span)
         modal.appendChild(div)
      
         
@@ -157,6 +192,9 @@ function getId(e){
         function closeModal() {
         modal.style.display = 'none';
         document.querySelector("body").style.overflow = 'auto';
+        modal.innerHTML = '';
+
+      
         }
 
       //  Outside Click close
@@ -164,6 +202,8 @@ function getId(e){
       if (e.target == modal) {
       modal.style.display = 'none';
       document.querySelector("body").style.overflow = 'auto';
+      modal.innerHTML = '';
+
    
       }
       }
