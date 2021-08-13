@@ -1,31 +1,26 @@
+
+
 import {data_birthday} from "./data_birthday.js";
 import {data_wedding} from "./data_wedding.js";
+
 
 let filtered_data_birthday;
 let filtered_data_wedding;
 
 function getData(className){
   let element = document.querySelector(className);
-
   if(element != null){
-
         filtered_data_birthday = data_birthday.filter(function(e){
-
           return e.display == true 
         })
-
         filtered_data_wedding = data_wedding.filter(function(e){
           return e.display == true 
         })
-
   }else{
         filtered_data_birthday =  data_birthday
         filtered_data_wedding = data_wedding
-
   }
-
 }
-
 getData(".section_feature")
 
 
