@@ -2,7 +2,7 @@
 
 import {data_birthday} from "./data_birthday.js";
 import {data_wedding} from "./data_wedding.js";
-
+import * as el from "./element.js";
 
 let filtered_data_birthday;
 let filtered_data_wedding;
@@ -26,27 +26,28 @@ getData(".section_feature")
 
 
 function loopData(id, data){
-  let birthday = document.querySelector(id)
-  if(birthday != null) {
+  let element = document.querySelector(id)
+  if(element != null) {
     for(let i = 0; i < data.length; i++){
         let li = document.createElement('li')
-      
+       
         li.innerHTML =  `
-     
+ 
         <img src="${data[i].source}" class="identifier" alt="...">
         <div id="${data[i].id}">
         <p class="title">${data[i].name}</p>
         <h4>${data[i].price}</h4>
         </div>
-          
+ 
         `
-      birthday.appendChild(li)
+      element.appendChild(li)
     }
   
   }
 
 
 }
+
 
 loopData('#birthday', filtered_data_birthday)
 loopData('#wedding', filtered_data_wedding)

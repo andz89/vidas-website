@@ -1,15 +1,15 @@
 import {data_birthday} from "./data_birthday.js";
 import {data_wedding} from "./data_wedding.js";
-import * as element_function from "./element.js";
+import * as el from "./element.js";
 //------------------------------modal--------------------------------
-let modal = element_function.appendElement('div', 'modal', null)
-let prev_btn = element_function.appendElement('div', 'prev', '<div class="prev-btn"></div>')
-let next_btn = element_function.appendElement('div', 'next', '<div class="next-btn"></div>')
-let close_btn = element_function.appendElement('span', 'close','&times;')
+let modal = el.appendElement('div', 'modal', null)
+let prev_btn = el.appendElement('div', 'prev', '<div class="prev-btn"></div>')
+let next_btn = el.appendElement('div', 'next', '<div class="next-btn"></div>')
+let close_btn = el.appendElement('span', 'close','&times;')
 
 modal.appendChild(next_btn)
 modal.appendChild(prev_btn)  
-modal.appendChild(close_btn)
+
 document.body.appendChild(modal)
 
 
@@ -47,7 +47,7 @@ function getId(e){
 
 
 //modal e target
-element_function.element("main").addEventListener("click",function(e){ 
+document.querySelector("main").addEventListener("click",function(e){ 
   getId(e.target)
 })
 
@@ -128,6 +128,8 @@ div = document.createElement('div')
   modal.style.display = 'block';
   modal.scrollTop = 0;
   modal.appendChild(div)
+  modal.querySelector(".modal-content").appendChild(close_btn)
+ 
 
   close_btn.addEventListener('click', function(){
     modal.style.display = 'none';
@@ -138,10 +140,10 @@ div = document.createElement('div')
   })
 
   window.addEventListener('click', function(e){
-    let modal_container = element_function.element(".modal-container")
+    let modal_container = document.querySelector(".modal-container")
     if (e.target == modal_container) {
     modal.style.display = 'none';
-    element_function.element("body").style.overflow = 'auto';
+    document.querySelector("body").style.overflow = 'auto';
     div.remove()
     index = 0
     }
@@ -166,9 +168,9 @@ let isDragging = false,
     return function(event){
      
       startPos = getPositionX(event)
-      console.log(startPos)
-  
+
       isDragging = true;
+      modal.classList.add('grabbing')
     }
   }
 
@@ -196,6 +198,8 @@ let isDragging = false,
      display_data(new_array[index])
 
     }
+
+    modal.classList.remove('grabbing')
   }
   function touchMove(event){
     if(isDragging){

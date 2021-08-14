@@ -1,3 +1,4 @@
+ 
  export function appendElement(createElement, css, text){
     let element = document.createElement(createElement)
     element.className += css
@@ -5,7 +6,7 @@
     return element
   }
   
-  export function addListener(elementListener, event, sample, elementTarget, css, func){
+  export function addListener(elementListener, event, sample, elementTarget, css){
     if(sample == null){
       elementListener.addEventListener(event, function(e){
         elementTarget.style.cssText = css
