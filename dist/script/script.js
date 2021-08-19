@@ -1,7 +1,10 @@
 
 import * as slide from "./slide.js";
-import * as el from "./element.js";
-import * as modal from "./modal.js";
+import {Elements} from "./element.js";
+// import * as modal from "./modal.js";
+import {Modal} from "./modal.js";
+
+
 
 //------------------------------nav--------------------------------
 let menu = document.querySelector('.menu-icon')
@@ -11,9 +14,9 @@ let nav_ul_span = document.querySelector("ul span")
 let ul_background = document.querySelector('.ul_background')
 
 //tablet and mobile script to show nav
-el.addListener(menu,"click",null, ul_background,'transform:translateX(0%)')
-el.addListener(nav_ul_span,"click",null, ul_background,'transform:translateX(100%)')
-el.addListener(window,"click", ul_background, ul_background,'transform:translateX(100%)')
+Elements.addListener(menu,"click",null, ul_background,'transform:translateX(0%)')
+Elements.addListener(nav_ul_span,"click",null, ul_background,'transform:translateX(100%)')
+Elements.addListener(window,"click", ul_background, ul_background,'transform:translateX(100%)')
 
 //click in ul element
 ul.addEventListener("click", function(e){
@@ -38,5 +41,15 @@ ul.addEventListener("click", function(e){
     document.querySelector(".container").style.display = "block";
 },1000)
   });
+
+
+//modal e target
+document.body.addEventListener("click",function(e){ 
+  Modal.getId(e.target)
+  Modal.closeModal(e.target)
+  Modal.next(e.target)
+  })
+
+
 
 

@@ -1,8 +1,6 @@
 
-
 import {data_birthday} from "./data_birthday.js";
 import {data_wedding} from "./data_wedding.js";
-import * as el from "./element.js";
 
 let filtered_data_birthday;
 let filtered_data_wedding;
@@ -48,9 +46,10 @@ function loopData(id, data){
 
 }
 
+document.addEventListener('DOMContentLoaded',loopData('#birthday', filtered_data_birthday));
+document.addEventListener('DOMContentLoaded',loopData('#wedding', filtered_data_wedding));
 
-loopData('#birthday', filtered_data_birthday)
-loopData('#wedding', filtered_data_wedding)
+
 
 
 

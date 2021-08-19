@@ -1,12 +1,13 @@
  
- export function appendElement(createElement, css, text){
+class Elements{
+
+  static appendElement(createElement, css, text){
     let element = document.createElement(createElement)
     element.className += css
     element.innerHTML = text
     return element
   }
-  
-  export function addListener(elementListener, event, sample, elementTarget, css){
+  static addListener(elementListener, event, sample, elementTarget, css){
     if(sample == null){
       elementListener.addEventListener(event, function(e){
         elementTarget.style.cssText = css
@@ -21,9 +22,17 @@
     }
   }
   
-  export function element(element){
+ static element(element){
     return  document.querySelector(element)
   }
-  export function elementAll(element){
+  static elementAll(element){
     return  document.querySelectorAll(element)
   }
+
+}
+
+export{Elements}
+
+
+  
+    
